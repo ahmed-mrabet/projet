@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="./page.css">
+    <script src="./page.js" defer></script>
+</head>
+<body>
+    <div id="grid">
+      <div id="image">
+        <img src="./image.jpg" alt="">
+      </div>
+    <div id="form">
+        <Form method="post">
+           <h1>Sign In</h1>
+           <div class="forms">
+            <label for="Name">Name :</label>
+            <input class="fildes" type="text"name="name"placeholder="Name"id="Name">
+           </div>
+           <div class="forms">
+            <label for="LN">Last Name :</label>
+            <input type="text"class="fildes" name="last name"placeholder="Last Name"id="LN">
+           </div>
+           <div class="forms">
+            <label for="age">Age :</label>
+            <input type="number"name="age"class="fildes"value="age"placeholder="Age"id="age">
+           </div>
+           <div class="forms">
+            <label for="gender">Gender :</label>
+            <div class="box">
+            <input class="checkoption" type="radio"value="Man"name="man"onclick="checkedOnClick(this)">Man
+            <input class="checkoption" type="radio"value="Woman"name="woman"onclick="checkedOnClick(this)">Woman 
+            <input  class="checkoption" type="radio"value="Other"name="other"onclick="checkedOnClick(this)">Other </div>
+            
+           </div>
+           <div class="forms">
+            <label for="mail">E-mail:</label>
+            <input type="email"name="mail"class="fildes"placeholder="E-mail"id="mail">
+           </div>
+           <div class="forms">
+            <label for="pwd">Password :</label>
+            <input type="password"class="fildes"name="password"placeholder="Password"id="pwd">
+           </div>
+           <div class="forms">
+            <label for="diet">Tried a diet before :</label>
+            <div class="box">
+            <input class="checkoption1" type="checkbox"name="yes"value="yes"class="diet"onclick="checkedOnClick1(this)">yes
+            <input class="checkoption1" type="checkbox"name="no"value="no" class="diet"onclick="checkedOnClick1 (this)">no</div>
+            
+           </div>   
+           <input type="button" value="START" id="submit"name="submit">  
+
+        </Form>
+    </div>
+</div>
+</body>
+</html>
